@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Blog Page</title>
+    <style>
+        :root {
+            --primary-color: #F4F7FF;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body id="bg-color-changer" class=" bg-[var(--primary-color)]">
+    <div class="w-[1540px] mx-auto ">
+        <nav class="flex items-center justify-between my-5 rounded-2xl bg-white p-6">
+            <div class="flex items-center gap-3 ">
+                <img class="w-full" src="assets/logo.png" alt="logo">
+                <h3 class="text-4xl">Dev<span class="font-bold">Board</span></h3>
+            </div>
+            <div class="text-center">
+                <input id="reDirectToHomePage" type="button" value="Back to Desk" class="text-white bg-[#3752FD] px-5 py-2 rounded-lg cursor-pointer" >
+            </div>
+        </nav>
+        <main class="mb-16">
+            <h2 class="font-bold text-2xl text-center mb-3">Blogs</h2>
+            <div class="flex flex-col gap-6">
+            <div class="flex flex-col justify-between gap-6 rounded-md bg-white p-4">
+                <h4 class="font-bold text-base text-start border-b-2 border-gray-200 ">Question-1: What are the different ways to select an element in the DOM?</h4>
+                <p class="text-sm text-gray-600  mb-1 ">there are some javascript document method that helps to select an element directly form the dom.I have even used getElementById,getElementByTagName,getElementByClassName,querySelector,querySelectorAll etc.</p>
+            </div>
+            <div class="flex flex-col justify-between gap-6 rounded-md bg-white p-4">
+                <h4 class="font-bold text-base text-start border-b-2 border-gray-200 ">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h4>
+                <p class="text-sm text-gray-600  mb-1 ">Those have unique way to get data like innerText just give the selected tags or element text only we can process further but innerHTML give direct html element like p tag with some text and textContent gives us the content of the element or tags. Thats the different between them</p>
+            </div>
+            <div class="flex flex-col justify-between gap-6 rounded-md bg-white p-4">
+                <h4 class="font-bold text-base text-start border-b-2 border-gray-200 ">Question-3: What is event delegation in the DOM?</h4>
+                <p class="text-sm text-gray-600  mb-1 ">Its a avdanced way to add event listerner to a dom node . We used it do delegate the parent. as simple as it.</p>
+            </div>
+            <div class="flex flex-col justify-between gap-6 rounded-md bg-white p-4">
+                <h4 class="font-bold text-base text-start border-b-2 border-gray-200 ">Question-4: What is event bubbling in the DOM?</h4>
+                <p class="text-sm text-gray-600  mb-1 ">Event bubbling popular way to triggered on a element. its like chain-reaction to the dom its go to the root of the dom and make a big change into it.</p>
+            </div>
+            <div class="flex flex-col justify-between gap-6 rounded-md bg-white p-4">
+                <h4 class="font-bold text-base text-start border-b-2 border-gray-200 ">Question-5: How do you create, add, and remove elements using JavaScript?</h4>
+                <p class="text-sm text-gray-600  mb-1 ">We can do this by using dom menipulation tachniqe in javascript . by using, appendChild,append </p>
+            </div>
+        </div>
+            
+        </main>
+    </div>
+
+    <script>
+        const reDirectToHomePage = document.getElementById('reDirectToHomePage');
+reDirectToHomePage.addEventListener('click', () => {
+    window.location.href = 'index.html'
+    });
+    </script>
+</body>
+
+</html>
