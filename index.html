@@ -23,7 +23,7 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 
-<body id="bg-color-changer" class="bg-[var(--primary-color)]">
+<body id="bg-color-changer" class=" bg-[var(--primary-color)]">
     <div class="w-[1540px] mx-auto ">
         <nav class="flex items-center justify-between my-5 rounded-2xl bg-white p-6">
             <div class="flex items-center gap-3 ">
@@ -38,14 +38,14 @@
                     <p class="font-bold text-3xl">23</p>
                 </div>
                 <div class="w-16 h-16 rounded-full bg-[var(--primary-color)] flex items-center justify-center">
-                    <div class="bg-(var(--primary-color)) p-3  rounded-full w-16 h-16">
+                    <div class="bg-(var(--primary-color)) p-3  rounded-full w-16 h-16 cursor-pointer">
                         <img class="w-full" id="color-changer-btn" src="assets/theme-btn.png" alt="button">
                     </div>
                 </div>
 
             </div>
         </nav>
-        <main>
+        <main class="mb-16">
             <div class="grid grid-cols-4 gap-6 bg-white rounded-2xl p-6">
                 <div class="flex  items-stretch gap-6 col-span-3">
                     <div
@@ -61,7 +61,7 @@
                                     class="font-bold text-3xl">05</span></h3>
                         </div>
                     </div>
-                    <div class="flex-2 bg-gradient-to-br from-[#3752FD] to-[#9BA8F8]  px-6 py-5 rounded-xl ">
+                    <div id="viewAnotherPage" class="cursor-pointer flex-2 bg-gradient-to-br from-[#3752FD] to-[#9BA8F8]  px-6 py-5 rounded-xl ">
                         <div class="flex gap-2 items-center justify-start">
                             <img src="assets/board.png" alt="calender" class="w-1/5">
                             <h3 class="font-medium text-2xl text-white">Discover Something <br> New Today!</h3>
@@ -81,7 +81,26 @@
 
                 </div>
                 
-                <div class="row-span-4">sitebar</div>
+                <div class="row-span-4 flex flex-col gap-5">
+                    <div class="flex flex-col gap-4 pb-10">
+                    <div class="flex justify-center items-center gap-4">
+                        <img src="assets/activity.png" alt="activity" >
+                        <h3 class="font-medium text-xl">Activity Log</h3>
+                    </div>
+                    <div class="text-center">
+                        <input  type="button" value="Clear History" class="text-white bg-[#3752FD] px-5 py-2 rounded-lg cursor-pointer" >
+                    </div>
+                </div>
+                <div class="rounded-lg bg-[var(--primary-color)] p-3 ">
+                    <p class="text-base">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+                </div>
+                <div class="rounded-lg bg-[var(--primary-color)] p-3 ">
+                    <p class="text-base">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+                </div>
+                    
+
+                    
+                </div>
                 <div class="rounded-2xl bg-[var(--primary-color)] p-6 ">
                     <div class="flex flex-col justify-start items-start gap-8">
                         <div class=" py-2 px-4 rounded-lg bg-white"><p class="text-base">ShopEase</p></div>
