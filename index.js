@@ -28,7 +28,7 @@ for (let card of allCards) {
         howManyClicked++;
 
         if(howManyClicked === allCardsItems) {
-            alert('congrats! you have conpleted all the current task'); // alert message when all button clicked
+            alert('congrats!!! you have completed all the current task'); // alert message when all button clicked
         }
         
     //    time functionality 
