@@ -35,11 +35,11 @@
                     <div>
                         <img class="w-full" src="assets/checkbox.png" alt="check-box">
                     </div>
-                    <p class="font-bold text-3xl">23</p>
+                    <p id="navNumber" class="font-bold text-3xl">23</p>
                 </div>
                 <div class="w-16 h-16 rounded-full bg-[var(--primary-color)] flex items-center justify-center">
                     <div class="bg-(var(--primary-color)) p-3  rounded-full w-16 h-16 cursor-pointer">
-                        <img class="w-full" id="color-changer-btn" src="assets/theme-btn.png" alt="button">
+                        <img class="w-full" id="color-changer" src="assets/theme-btn.png" alt="button">
                     </div>
                 </div>
 
@@ -58,7 +58,7 @@
                         </div>
                         <div>
                             <h3 class="text-base font-medium opacity-80">Task Assigned <br> <span
-                                    class="font-bold text-3xl">05</span></h3>
+                                    id="taskNumber" class="font-bold text-3xl">06</span></h3>
                         </div>
                     </div>
                     <div id="viewAnotherPage" class="cursor-pointer flex-2 bg-gradient-to-br from-[#3752FD] to-[#9BA8F8]  px-6 py-5 rounded-xl ">
@@ -75,42 +75,38 @@
                             
                         </div>
                         <div>
-                            <h3 class="text-base font-medium opacity-80">Wed, <br> <span class="font-bold">Jul 28 2025 </span></h3>
+                            <h3 class="datetimer text-base font-medium opacity-80"> <br> <span id="todays-date" class="font-bold"></span></h3>
                         </div>
                     </div>
 
                 </div>
                 
-                <div class="row-span-4 flex flex-col gap-5">
+                <div   class="row-span-4 flex flex-col gap-5">
                     <div class="flex flex-col gap-4 pb-10">
                     <div class="flex justify-center items-center gap-4">
                         <img src="assets/activity.png" alt="activity" >
                         <h3 class="font-medium text-xl">Activity Log</h3>
                     </div>
                     <div class="text-center">
-                        <input  type="button" value="Clear History" class="text-white bg-[#3752FD] px-5 py-2 rounded-lg cursor-pointer" >
+                        <input id="clear-history" type="button" value="Clear History" class="text-white bg-[#3752FD] px-5 py-2 rounded-lg cursor-pointer" >
                     </div>
+                    <div id="sidebar" class="flex flex-col gap-5"></div>
                 </div>
-                <div class="rounded-lg bg-[var(--primary-color)] p-3 ">
-                    <p class="text-base">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-                </div>
-                <div class="rounded-lg bg-[var(--primary-color)] p-3 ">
-                    <p class="text-base">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-                </div>
+                
                     
 
-                    
-                </div>
+            </div>
+            <!-- cards  -->
                 <div class="rounded-2xl bg-[var(--primary-color)] p-6 ">
                     <div class="flex flex-col justify-start items-start gap-8">
                         <div class=" py-2 px-4 rounded-lg bg-white"><p class="text-base">ShopEase</p></div>
-                        <h1 class="text-2xl font-medium">Fix Mobile Button Issue </h1>
+                        <h1 class="title text-2xl font-medium">Fix Mobile Button Issue </h1>
                         <div class=" py-2 px-4 rounded-lg bg-white"><p class="text-base">Store the user's preference in localStorage, update CSS</p></div>
                         <div class="flex justify-between items-center gap-20">
                             <div class="flex-1">
                                 <h3 class="text-base font-medium opacity-80">Wed, <br> <span class="font-bold">Jul 28 2025 </span></h3>
                             </div>
-                            <input  type="button" value="Completed" class="text-white bg-[#3752FD] px-5 py-2 rounded-lg cursor-pointer" >
+                            <input  type="button" value="Completed" class="task-chacker text-white bg-[#3752FD] px-5 py-2 rounded-lg cursor-pointer" >
                             
                         </div>
                     </div>
@@ -119,13 +115,13 @@
                 <div class="rounded-2xl bg-[var(--primary-color)] p-6 ">
                     <div class="flex flex-col justify-start items-start gap-8">
                         <div class=" py-2 px-4 rounded-lg bg-white"><p class="text-base">ShopEase</p></div>
-                        <h1 class="text-2xl font-medium">Fix Mobile Button Issue </h1>
+                        <h1 class="title text-2xl font-medium">Add Dark Mode </h1>
                         <div class=" py-2 px-4 rounded-lg bg-white"><p class="text-base">Store the user's preference in localStorage, update CSS</p></div>
                         <div class="flex justify-between items-center gap-20">
                             <div class="flex-1">
                                 <h3 class="text-base font-medium opacity-80">Wed, <br> <span class="font-bold">Jul 28 2025 </span></h3>
                             </div>
-                            <input  type="button" value="Completed" class="text-white bg-[#3752FD] px-5 py-2 rounded-lg cursor-pointer" >
+                            <input  type="button" value="Completed" class="task-chacker text-white bg-[#3752FD] px-5 py-2 rounded-lg cursor-pointer" >
                             
                         </div>
                     </div>
@@ -134,13 +130,13 @@
                 <div class="rounded-2xl bg-[var(--primary-color)] p-6 ">
                     <div class="flex flex-col justify-start items-start gap-8">
                         <div class=" py-2 px-4 rounded-lg bg-white"><p class="text-base">ShopEase</p></div>
-                        <h1 class="text-2xl font-medium">Fix Mobile Button Issue </h1>
+                        <h1 class="title text-2xl font-medium">Optimize  Home page  </h1>
                         <div class=" py-2 px-4 rounded-lg bg-white"><p class="text-base">Store the user's preference in localStorage, update CSS</p></div>
                         <div class="flex justify-between items-center gap-20">
                             <div class="flex-1">
                                 <h3 class="text-base font-medium opacity-80">Wed, <br> <span class="font-bold">Jul 28 2025 </span></h3>
                             </div>
-                            <input  type="button" value="Completed" class="text-white bg-[#3752FD] px-5 py-2 rounded-lg cursor-pointer" >
+                            <input  type="button" value="Completed" class="task-chacker text-white bg-[#3752FD] px-5 py-2 rounded-lg cursor-pointer" >
                             
                         </div>
                     </div>
@@ -149,13 +145,13 @@
                 <div class="rounded-2xl bg-[var(--primary-color)] p-6 ">
                     <div class="flex flex-col justify-start items-start gap-8">
                         <div class=" py-2 px-4 rounded-lg bg-white"><p class="text-base">ShopEase</p></div>
-                        <h1 class="text-2xl font-medium">Fix Mobile Button Issue </h1>
+                        <h1 class="title text-2xl font-medium">Add new emoji 🤲</h1>
                         <div class=" py-2 px-4 rounded-lg bg-white"><p class="text-base">Store the user's preference in localStorage, update CSS</p></div>
                         <div class="flex justify-between items-center gap-20">
                             <div class="flex-1">
                                 <h3 class="text-base font-medium opacity-80">Wed, <br> <span class="font-bold">Jul 28 2025 </span></h3>
                             </div>
-                            <input  type="button" value="Completed" class="text-white bg-[#3752FD] px-5 py-2 rounded-lg cursor-pointer" >
+                            <input  type="button" value="Completed" class="task-chacker text-white bg-[#3752FD] px-5 py-2 rounded-lg cursor-pointer" >
                             
                         </div>
                     </div>
@@ -164,13 +160,13 @@
                 <div class="rounded-2xl bg-[var(--primary-color)] p-6 ">
                     <div class="flex flex-col justify-start items-start gap-8">
                         <div class=" py-2 px-4 rounded-lg bg-white"><p class="text-base">ShopEase</p></div>
-                        <h1 class="text-2xl font-medium">Fix Mobile Button Issue </h1>
+                        <h1 class="title text-2xl font-medium">Integrate OpenAI API  </h1>
                         <div class=" py-2 px-4 rounded-lg bg-white"><p class="text-base">Store the user's preference in localStorage, update CSS</p></div>
                         <div class="flex justify-between items-center gap-20">
                             <div class="flex-1">
                                 <h3 class="text-base font-medium opacity-80">Wed, <br> <span class="font-bold">Jul 28 2025 </span></h3>
                             </div>
-                            <input  type="button" value="Completed" class="text-white bg-[#3752FD] px-5 py-2 rounded-lg cursor-pointer" >
+                            <input  type="button" value="Completed" class="task-chacker text-white bg-[#3752FD] px-5 py-2 rounded-lg cursor-pointer" >
                             
                         </div>
                     </div>
@@ -179,13 +175,13 @@
                 <div class="rounded-2xl bg-[var(--primary-color)] p-6 ">
                     <div class="flex flex-col justify-start items-start gap-8">
                         <div class=" py-2 px-4 rounded-lg bg-white"><p class="text-base">ShopEase</p></div>
-                        <h1 class="text-2xl font-medium">Fix Mobile Button Issue </h1>
+                        <h1 class="title text-2xl font-medium">Improve Job searching  </h1>
                         <div class=" py-2 px-4 rounded-lg bg-white"><p class="text-base">Store the user's preference in localStorage, update CSS</p></div>
                         <div class="flex justify-between items-center gap-20">
                             <div class="flex-1">
                                 <h3 class="text-base font-medium opacity-80">Wed, <br> <span class="font-bold">Jul 28 2025 </span></h3>
                             </div>
-                            <input  type="button" value="Completed" class="text-white bg-[#3752FD] px-5 py-2 rounded-lg cursor-pointer" >
+                            <input  type="button" value="Completed" class="task-chacker text-white bg-[#3752FD] px-5 py-2 rounded-lg cursor-pointer" >
                             
                         </div>
                     </div>
